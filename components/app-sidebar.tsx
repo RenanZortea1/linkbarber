@@ -41,7 +41,7 @@ const data = {
   navMain: [
     {
       title: "Dashboard",
-      url: "dashboard",
+      url: "/",
       icon: House,
       isActive: true,
       items: [
@@ -66,7 +66,7 @@ const data = {
         },
         {
           title: "Calendario",
-          url: "#",
+          url: "schedule",
         },
         {
           title: "Clientes",

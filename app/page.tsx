@@ -4,9 +4,11 @@ import { Component } from "@/components/pieChart";
 
 export default function Home() {
   return (
-      <main className="">
+    <main className="">
+      <div className="grid grid-cols-3">
       <Component />
       <Component1 />
-  </main>
+      </div>
+    </main>
   );
 }
