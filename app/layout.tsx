@@ -3,6 +3,7 @@ import { AppSidebar } from "@/components/app-sidebar"
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { CommandDialogDemo } from "@/components/commandDialog";
 
 export const metadata: Metadata = {
   title: "Link Barber",
@@ -16,6 +17,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <body>
     <SidebarProvider>
       <AppSidebar />
+          <CommandDialogDemo />
       <main>
         <SidebarTrigger />
         {children}
