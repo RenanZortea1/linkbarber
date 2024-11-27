@@ -5,8 +5,7 @@ import React from 'react'
 
 export default function Schedule() {
   return (
-    <main className="absolute h-screen w-screen overflow-hidden">
-      <div className="flex w-full h-full">
+    <main className="absolute h-4/5 grid w-5/6 mt-10 overflow-hidden">
         {/* Left Content: DatePicker */}
             {/*
 
@@ -15,11 +14,9 @@ export default function Schedule() {
         </div>
 
             */}
-        
         {/* Right Content: Scheduler */}
-        <div className="relative w-2/3 h-4/5 p-4">
+        <div className="relative w-full col-span-2 h-full p-4">
           <SchedulerComponent />
-        </div>
       </div>
     </main>
   );
