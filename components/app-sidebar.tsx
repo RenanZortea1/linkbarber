@@ -62,7 +62,7 @@ const data = {
       items: [
         {
           title: "Equipe",
-          url: "#",
+          url: "team"
         },
         {
           title: "Calendario",

@@ -5,6 +5,7 @@ import {
   Calculator,
   Calendar,
   CreditCard,
+  DollarSign,
   Settings,
   Smile,
   User,
@@ -23,19 +24,19 @@ import CommandLink from "@/components/commandLink";
 
 const commands = [
   {
-    heading: "Suggestions",
+    heading: "Acesso Rapido",
     items: [
       { href: "/schedule", icon: Calendar, label: "Calendario" },
       { href: "/team", icon: Smile, label: "Equipe" },
-      { href: "/calculator", icon: Calculator, label: "Calculator" },
+      { href: "/finance", icon: DollarSign, label: "Financeiro" },
     ],
   },
   {
-    heading: "Settings",
+    heading: "Configuracoes",
     items: [
-      { href: "/profile", icon: User, label: "Profile" },
-      { href: "/billing", icon: CreditCard, label: "Billing" },
-      { href: "/settings", icon: Settings, label: "Settings" },
+      { href: "/profile", icon: User, label: "Perfil" },
+      { href: "/billing", icon: CreditCard, label: "Assinatura" },
+      { href: "/settings", icon: Settings, label: "Configuracoes" },
     ],
   },
 ];
@@ -58,13 +59,13 @@ export function CommandDialogDemo() {
   return (
     <>
       <p className="absolute bottom-0 right-0 p-6 text-sm text-muted-foreground">
-        Press{" "}
+        Pressione{" "}
         <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
           <span className="text-xs">⌘</span>J
         </kbd>
       </p>
       <CommandDialog open={open} onOpenChange={setOpen}>
-        <CommandInput placeholder="Type a command or search..." />
+        <CommandInput placeholder="Procure..." />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
           {commands.map((group) => (
