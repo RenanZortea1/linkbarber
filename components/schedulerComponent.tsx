@@ -23,7 +23,7 @@ const SchedulerComponent = () => {
 
 const langs: LocaleType[] = [
   {
-    id: "en",
+    id: "pt",
     lang: {
       feelingEmpty: "Eu me sinto tão vazio...",
       free: "Livre",
@@ -41,7 +41,7 @@ const langs: LocaleType[] = [
       search: "buscar",
       week: "semana"
     },
-      translateCode: "en-EN",
+      translateCode: "pt-BR",
     dayjsTranslations: enDayjsTranslations}
 ];
 
@@ -188,7 +188,7 @@ const mockedSchedulerData: SchedulerData = [
       onClearFilterData={() => setFilterButtonState(0)}
       config={{
         zoom: 2,
-        lang: "en",
+        lang: "pt",
         translations: langs,
         filterButtonState,
       }}

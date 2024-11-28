@@ -1,13 +1,13 @@
-import { Component1 } from "@/components/barChart";
-import { Component } from "@/components/pieChart";
+import { BarChartDash, Component1 } from "@/components/barChart";
+import { Component, PieChartDash } from "@/components/pieChart";
 
 
 export default function Home() {
   return (
     <main className="">
       <div className="grid grid-cols-3">
-      <Component />
-      <Component1 />
+        <BarChartDash />
+        <PieChartDash />
       </div>
     </main>
   );
