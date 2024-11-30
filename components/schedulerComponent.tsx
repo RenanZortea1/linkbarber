@@ -56,8 +56,8 @@ const mockedSchedulerData: SchedulerData = [
     data: [
       {
         id: "abcd1234-5678-90ab-cdef-1234567890ab",
-        startDate: new Date("2024-11-25T08:00:00Z"),
-        endDate: new Date("2024-11-25T10:00:00Z"),
+        startDate: new Date("2024-11-29T08:00:00Z"), // Friday, 29th Nov 2024, 08:00
+        endDate: new Date("2024-11-29T10:00:00Z"), // Friday, 29th Nov 2024, 10:00
         occupancy: 7200,
         title: "Corte Masculino",
         subtitle: "Cliente: Carlos",
@@ -66,12 +66,22 @@ const mockedSchedulerData: SchedulerData = [
       },
       {
         id: "efgh5678-1234-5678-abcd-1234567890ef",
-        startDate: new Date("2024-11-25T10:30:00Z"),
-        endDate: new Date("2024-11-25T11:30:00Z"),
+        startDate: new Date("2024-11-30T10:30:00Z"), // Saturday, 30th Nov 2024, 10:30
+        endDate: new Date("2024-11-30T11:30:00Z"), // Saturday, 30th Nov 2024, 11:30
         occupancy: 3600,
         title: "Barba e Bigode",
         subtitle: "Cliente: André",
         description: "Barba desenhada e alinhamento do bigode.",
+        bgColor: "rgb(254,165,177)",
+      },
+      {
+        id: "ijkl9012-3456-7890-abcd-234567890ghi",
+        startDate: new Date("2024-12-01T08:00:00Z"), // Sunday, 1st Dec 2024, 08:00
+        endDate: new Date("2024-12-01T10:00:00Z"), // Sunday, 1st Dec 2024, 10:00
+        occupancy: 7200,
+        title: "Corte Masculino",
+        subtitle: "Cliente: Carlos",
+        description: "Corte moderno com degradê nas laterais.",
         bgColor: "rgb(254,165,177)",
       },
     ],
@@ -86,8 +96,8 @@ const mockedSchedulerData: SchedulerData = [
     data: [
       {
         id: "1234abcd-5678-90ef-ghij-1234567890kl",
-        startDate: new Date("2024-11-25T12:00:00Z"),
-        endDate: new Date("2024-11-25T13:00:00Z"),
+        startDate: new Date("2024-12-01T12:00:00Z"), // Sunday, 1st Dec 2024, 12:00
+        endDate: new Date("2024-12-01T13:00:00Z"), // Sunday, 1st Dec 2024, 13:00
         occupancy: 3600,
         title: "Tratamento Facial",
         subtitle: "Cliente: Paula",
@@ -96,12 +106,22 @@ const mockedSchedulerData: SchedulerData = [
       },
       {
         id: "5678abcd-90ef-ghij-klmn-1234567890op",
-        startDate: new Date("2024-11-25T13:30:00Z"),
-        endDate: new Date("2024-11-25T14:30:00Z"),
+        startDate: new Date("2024-12-02T13:30:00Z"), // Monday, 2nd Dec 2024, 13:30
+        endDate: new Date("2024-12-02T14:30:00Z"), // Monday, 2nd Dec 2024, 14:30
         occupancy: 3600,
         title: "Sobrancelhas",
         subtitle: "Cliente: Ana",
         description: "Design e pigmentação das sobrancelhas.",
+        bgColor: "rgb(177,221,254)",
+      },
+      {
+        id: "efgh7890-1234-5678-ijkl-1234567890st",
+        startDate: new Date("2024-12-03T12:00:00Z"), // Tuesday, 3rd Dec 2024, 12:00
+        endDate: new Date("2024-12-03T13:00:00Z"), // Tuesday, 3rd Dec 2024, 13:00
+        occupancy: 3600,
+        title: "Limpeza de Pele",
+        subtitle: "Cliente: Julia",
+        description: "Limpeza profunda e remoção de cravos.",
         bgColor: "rgb(177,221,254)",
       },
     ],
@@ -116,8 +136,8 @@ const mockedSchedulerData: SchedulerData = [
     data: [
       {
         id: "abcd5678-1234-90ef-ghij-4567890klmno",
-        startDate: new Date("2024-11-25T15:00:00Z"),
-        endDate: new Date("2024-11-25T16:00:00Z"),
+        startDate: new Date("2024-12-02T15:00:00Z"), // Monday, 2nd Dec 2024, 15:00
+        endDate: new Date("2024-12-02T16:00:00Z"), // Monday, 2nd Dec 2024, 16:00
         occupancy: 3600,
         title: "Corte Infantil",
         subtitle: "Cliente: Lucas",
@@ -126,8 +146,8 @@ const mockedSchedulerData: SchedulerData = [
       },
       {
         id: "5678efgh-1234-abcd-ijkl-1234567890pq",
-        startDate: new Date("2024-11-25T16:30:00Z"),
-        endDate: new Date("2024-11-25T17:30:00Z"),
+        startDate: new Date("2024-12-04T16:30:00Z"), // Wednesday, 4th Dec 2024, 16:30
+        endDate: new Date("2024-12-04T17:30:00Z"), // Wednesday, 4th Dec 2024, 17:30
         occupancy: 3600,
         title: "Corte Clássico",
         subtitle: "Cliente: João",
@@ -146,8 +166,8 @@ const mockedSchedulerData: SchedulerData = [
     data: [
       {
         id: "1234efgh-5678-ijkl-mnop-1234567890qr",
-        startDate: new Date("2024-11-25T18:00:00Z"),
-        endDate: new Date("2024-11-25T19:00:00Z"),
+        startDate: new Date("2024-12-05T18:00:00Z"), // Thursday, 5th Dec 2024, 18:00
+        endDate: new Date("2024-12-05T19:00:00Z"), // Thursday, 5th Dec 2024, 19:00
         occupancy: 3600,
         title: "Manicure Básica",
         subtitle: "Cliente: Sofia",
@@ -156,8 +176,8 @@ const mockedSchedulerData: SchedulerData = [
       },
       {
         id: "abcdijkl-5678-mnop-qrst-1234567890uv",
-        startDate: new Date("2024-11-25T19:30:00Z"),
-        endDate: new Date("2024-11-25T20:30:00Z"),
+        startDate: new Date("2024-12-05T19:30:00Z"), // Thursday, 5th Dec 2024, 19:30
+        endDate: new Date("2024-12-05T20:30:00Z"), // Thursday, 5th Dec 2024, 20:30
         occupancy: 3600,
         title: "Unhas Decoradas",
         subtitle: "Cliente: Laura",
