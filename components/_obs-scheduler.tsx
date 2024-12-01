@@ -10,7 +10,7 @@ import isBetween from "dayjs/plugin/isBetween";
 // Extend dayjs with the isBetween plugin
 dayjs.extend(isBetween);
 
-const SchedulerComponent = () => {
+const = () => {
   const [filterButtonState, setFilterButtonState] = useState(0);
   const [range, setRange] = useState({
     startDate: new Date(),
@@ -217,5 +217,5 @@ const mockedSchedulerData: SchedulerData = [
 };
 
 
-export default SchedulerComponent;
+export default ;
 
