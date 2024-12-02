@@ -14,6 +14,9 @@ body {
   color: #282828 !important;
   border: 1px solid #D5D5D5 !important;
 }
+.css-1d1h06e, .rs__cell, .rs__header, .rs__time{
+  z-index: 1 !important;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;

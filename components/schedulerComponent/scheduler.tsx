@@ -1,8 +1,9 @@
 "use client"
 
-import { Fragment, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import { Button, Typography } from "@mui/material";
 import { Scheduler } from "@aldabil/react-scheduler";
+import './style.css';
 import { SchedulerRef } from "@aldabil/react-scheduler/types";
 import { RESOURCES, EVENTS } from "./data";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
@@ -13,8 +14,7 @@ function SchedulerComponent() {
 
   return (
     <Fragment>
-      <div style={{ textAlign: "center" }}>
-        <span>Resource View Mode: </span>
+      {/*<div style={{ textAlign: "center" }}>
         <Button
           color={mode === "default" ? "primary" : "inherit"}
           variant={mode === "default" ? "contained" : "text"}
@@ -44,6 +44,7 @@ function SchedulerComponent() {
           Tabs
         </Button>
       </div>
+      */}
 <Scheduler
   ref={calendarRef}
   events={EVENTS}
@@ -89,6 +90,7 @@ function SchedulerComponent() {
     avatarField: "title",
     colorField: "color",
   }}
+        resourceViewMode="tabs"
   fields={[
     {
       name: "admin_id",
